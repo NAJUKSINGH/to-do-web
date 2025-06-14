@@ -1,0 +1,128 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(13, 13, 85);
+   
+}
+
+.container{
+    height: 70vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border: .25rem solid black;
+    border-radius: .5rem;
+    background-color: rgb(224, 150, 150);
+    opacity: 1;
+}
+
+.data input[type ="text"]{
+width: 60%;
+}
+
+
+h1{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.data{
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: black;
+    margin: .5rem;
+    padding: 0.75rem;
+    border-radius: .2rem;
+}
+#addBtn{
+    background-color: rgb(82, 238, 39);
+    border-radius: .25rem;
+    color: white;
+    cursor: pointer;
+    
+}
+
+#btn:hover{
+    opacity: 0.85;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+ul li {
+    list-style-type: none;
+    border: .125px solid rgb(243, 220, 220);
+    border-radius: 4px;
+    margin: .2rem;
+    padding: .5rem;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    transition: background-color 0.5s;
+}
+ul li:hover{
+    background-color: azure;
+}
+
+ul li p {
+    flex-grow: 1;
+    margin: .25rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.delete-btn{
+    border: none;
+    outline: none;
+    background-color: none;
+    font-size: 1rem;
+    color: red;
+    margin-left: 1rem;
+}
+.mark-btn{
+     border: none;
+    outline: none;
+    font-size: 1rem;
+    color: green;
+    background-color: none;
+}
+
+
+@media screen and (max-width: 450px){
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(17, 17, 55);
+}
+
+.container{
+    height: 70vh;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border: .25rem solid black;
+    border-radius: .5rem;
+    background-color: rgb(224, 150, 150);
+}
+
+}
